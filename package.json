@@ -1,0 +1,27 @@
+{
+  "name": "pacit",
+  "version": "0.1.0",
+  "description": "make JavaScript chainable and more readable.",
+  "main": "./dist/index.js",
+  "types": "./types",
+  "scripts": {
+    "build": "tacer-script build",
+    "test": "tacer-script test",
+    "test:watch": "tacer-script test:watch"
+  },
+  "author": "Idan Loo <im@siwei.lu>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IdanLoo/pacit"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "tacer-template-lib": "^0.5.1"
+  },
+  "keywords": [
+    "chainable",
+    "pure",
+    "readable"
+  ]
+}
