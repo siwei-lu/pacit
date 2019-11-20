@@ -61,5 +61,7 @@ workflows:
           requires:
             - test
           filters:
+            tags:
+              only: /^v\d+\.\d+\.\d+$/
             branches:
-                only: release
+              only: master
