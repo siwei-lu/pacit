@@ -40,9 +40,6 @@ jobs:
           name: Build
           command: yarn build
       - run:
-          name: Tag
-          command: yarn release
-      - run:
           name: Auth NPM
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ./.npmrc
       - run:
@@ -63,5 +60,3 @@ workflows:
           filters:
             tags:
               only: /^v\d+\.\d+\.\d+$/
-            branches:
-              only: master
