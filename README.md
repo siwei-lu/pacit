@@ -40,6 +40,8 @@ console.log(result) // 124
 
 - `and` execute some side effect here. It returns the original value whatever the return value of the function you pass in is.
 
+You can get rid of any `and` at any time.
+
 ```js
 const result = pacit(123)
   .map(addOne)
