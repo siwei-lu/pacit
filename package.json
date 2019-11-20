@@ -7,7 +7,8 @@
   "scripts": {
     "build": "tacer-script build",
     "test": "tacer-script test",
-    "test:watch": "tacer-script test:watch"
+    "test:watch": "tacer-script test:watch",
+    "release": "standard-version"
   },
   "author": "Idan Loo <im@siwei.lu>",
   "license": "MIT",
@@ -18,6 +19,8 @@
   "devDependencies": {
     "@types/jest": "^24.0.18",
     "@types/ramda": "^0.26.36",
+    "ramda": "^0.26.1",
+    "standard-version": "^7.0.1",
     "tacer-template-lib": "^0.5.1"
   },
   "keywords": [
@@ -25,7 +28,5 @@
     "pure",
     "readable"
   ],
-  "dependencies": {
-    "ramda": "^0.26.1"
-  }
+  "dependencies": {}
 }
