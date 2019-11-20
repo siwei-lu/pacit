@@ -3,8 +3,8 @@ type BaseFunction<T> = (value: T) => any
 class Packed<T> {
   constructor(private value: T) {}
 
-  pipe<F extends BaseFunction<T>>(func: F): Packed<ReturnType<F>> {
-    return chaine(func(this.value))
+  map<F extends BaseFunction<T>>(func: F): Packed<ReturnType<F>> {
+    return pacit(func(this.value))
   }
 
   and<F extends BaseFunction<T>>(func: F) {
@@ -17,6 +17,6 @@ class Packed<T> {
   }
 }
 
-export default function chaine<T>(value: T) {
+export default function pacit<T>(value: T) {
   return new Packed<T>(value)
 }

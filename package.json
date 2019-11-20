@@ -17,11 +17,15 @@
   },
   "devDependencies": {
     "@types/jest": "^24.0.18",
+    "@types/ramda": "^0.26.36",
     "tacer-template-lib": "^0.5.1"
   },
   "keywords": [
     "chainable",
     "pure",
     "readable"
-  ]
+  ],
+  "dependencies": {
+    "ramda": "^0.26.1"
+  }
 }
