@@ -3,12 +3,12 @@
   "version": "0.1.3",
   "description": "make JavaScript chainable and more readable.",
   "main": "./dist/index.js",
-  "types": "./types",
+  "types": "./types/index.d.ts",
   "scripts": {
     "build": "tacer-script build",
     "test": "tacer-script test",
     "test:watch": "tacer-script test:watch",
-    "release": "standard-version"
+    "release": "standard-version && git push origin master"
   },
   "author": "Idan Loo <im@siwei.lu>",
   "license": "MIT",
