@@ -48,7 +48,7 @@ jobs:
 
 workflows:
   version: 2
-  test_and_publish:
+  default:
     jobs:
       - init
       - test:
